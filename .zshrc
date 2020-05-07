@@ -13,36 +13,8 @@ SAVEHIST=1000000
 
 # Path
 export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/Users/katsumi/Documents/library/flutter/bin
 setopt nonomatch
-
-# Ruby
-export PATH=$HOME/.rbenv/bin:$PATH
-
-# Git
-export PATH=/usr/local/Cellar/git/2.5.0/bin:$PATH
-
-#go
-export GOPATH=$HOME/golang
-export PATH=$HOME/golang/bin:$PATH
-
-#python
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/axis/Documents/Library/cocos2d-x-3.10/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/axis/Documents/Library
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/axis/Documents/Library/cocos2d-x-3.10/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-#postgresql
-export PGDATA=/usr/local/var/postgres
 
 autoload -U compinit
 compinit -u
@@ -190,7 +162,5 @@ alias fig='docker-compose'
 alias do='docker'
 alias ds='docker-sync start'
 
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
-
+eval "$(anyenv init -)"
 
